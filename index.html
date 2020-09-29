@@ -5,11 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <title>Face time!</title>
+        <script type="text/javascript">    
+            function cambiarCara(){
+                document.getElementById("face").innerHTML=":)";          
+            }
+            function devolverCara(){
+                document.getElementById("face").innerHTML=":|";          
+            }
+        </script>
     </head>
     <body>
-        <div class="page">
-            <div class="head">
-                <div class="face">:|</div>
+        <div class="page">            
+            <div class="head" onmouseover="cambiarCara()" onmouseout="devolverCara()">
+                <div id="face">:|</div>
             </div>
         </div>        
     </body>
